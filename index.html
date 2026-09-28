@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>خطة الباك الحر 2027 | علوم فيزيائية</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="brand">
+        <div class="brand-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+
+        <div>
+            <h1>باك حر 2027</h1>
+            <span>علوم فيزيائية</span>
+        </div>
+    </div>
+
+    <div class="date-box">
+        <i class="fa-regular fa-calendar"></i>
+        <span id="currentDate">--</span>
+    </div>
+</header>
+
+
+<main class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="phase-badge" id="phaseBadge">
+                المرحلة الأولى
+            </span>
+
+            <h2 id="phaseTitle">
+                إنهاء البرنامج الدراسي
+            </h2>
+
+            <p id="phaseDescription">
+                هدفك الآن هو إنهاء 100 وحدة دراسية بشكل منظم قبل نهاية مارس.
+            </p>
+        </div>
+
+        <div class="hero-icon">
+            <i class="fa-solid fa-rocket"></i>
+        </div>
+    </section>
+
+
+    <!-- PROGRESS -->
+    <section class="progress-card">
+
+        <div class="section-title">
+            <div>
+                <span class="small-label">التقدم العام</span>
+                <h2>طريقك نحو الباك</h2>
+            </div>
+
+            <strong id="progressPercent">0%</strong>
+        </div>
+
+        <div class="progress-bar">
+            <div id="progressFill"></div>
+        </div>
+
+        <div class="progress-info">
+            <span>
+                أنجزت <b id="completedCount">0</b> من
+                <b>100</b> وحدة
+            </span>
+
+            <span id="remainingText">
+                بقي 100 وحدة
+            </span>
+        </div>
+    </section>
+
+
+    <!-- TODAY -->
+    <section class="today-card">
+
+        <div class="section-heading">
+            <span class="small-label">مهمة اليوم</span>
+            <h2 id="todayTitle">جاري تحديد مهمة اليوم...</h2>
+        </div>
+
+        <div id="todayContent"></div>
+
+    </section>
+
+
+    <!-- DAILY ROUTINE -->
+    <section class="routine-section">
+
+        <div class="section-heading">
+            <span class="small-label">نظام اليوم</span>
+            <h2>كيف تدرس اليوم؟</h2>
+        </div>
+
+        <div id="routineGrid" class="routine-grid"></div>
+
+    </section>
+
+
+    <!-- WEEK -->
+    <section class="week-section">
+
+        <div class="section-heading">
+            <span class="small-label">الأسبوع</span>
+            <h2>خطة هذا الأسبوع</h2>
+        </div>
+
+        <div id="weekGrid" class="week-grid"></div>
+
+    </section>
+
+
+    <!-- SUBJECT PROGRESS -->
+    <section class="subjects-section">
+
+        <div class="section-heading">
+            <span class="small-label">المواد</span>
+            <h2>تقدمك في كل مادة</h2>
+        </div>
+
+        <div id="subjectsGrid" class="subjects-grid"></div>
+
+    </section>
+
+
+    <!-- PHASES -->
+    <section class="phases-section">
+
+        <div class="section-heading">
+            <span class="small-label">الخريطة</span>
+            <h2>مراحل الطريق إلى الامتحان</h2>
+        </div>
+
+        <div class="phases-grid">
+
+            <div class="phase-card active">
+                <div class="phase-number">01</div>
+                <div>
+                    <h3>سبتمبر → مارس</h3>
+                    <p>إنهاء 100 وحدة دراسية.</p>
+                </div>
+            </div>
+
+            <div class="phase-card">
+                <div class="phase-number">02</div>
+                <div>
+                    <h3>23 → 31 مارس</h3>
+                    <p>تعويض الدروس المتأخرة ومراجعة عامة.</p>
+                </div>
+            </div>
+
+            <div class="phase-card">
+                <div class="phase-number">03</div>
+                <div>
+                    <h3>أبريل</h3>
+                    <p>مراجعة الـ100 وحدة مرة ثانية.</p>
+                </div>
+            </div>
+
+            <div class="phase-card">
+                <div class="phase-number">04</div>
+                <div>
+                    <h3>ماي</h3>
+                    <p>تمارين وامتحانات سابقة ومحاكاة.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- RULES -->
+    <section class="rules-card">
+
+        <div class="rules-icon">
+            <i class="fa-solid fa-lightbulb"></i>
+        </div>
+
+        <div>
+            <h2>قواعد الخطة</h2>
+
+            <ul>
+                <li>لا تحاول دراسة أكثر من المطلوب في يوم واحد.</li>
+                <li>افهم الدرس أولاً ثم طبق عليه بالتمارين.</li>
+                <li>كل درس يجب أن ينتهي بملخص واسترجاع بدون النظر للدفتر.</li>
+                <li>الأربعاء/أيام المراجعة ليست لإضافة دروس جديدة.</li>
+                <li>الجمعة راحة كاملة من الدراسة.</li>
+                <li>إذا تأخرت في درس، استعمل أيام التعويض في نهاية مارس.</li>
+            </ul>
+        </div>
+
+    </section>
+
+
+    <!-- RESET -->
+    <section class="settings-card">
+
+        <button id="resetProgress" class="reset-btn">
+            <i class="fa-solid fa-rotate-left"></i>
+            تصفير التقدم
+        </button>
+
+        <p>
+            التقدم محفوظ تلقائياً على هذا الجهاز.
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>
+        خطة باك حر 2027 — علوم فيزيائية
+    </p>
+</footer>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
